@@ -8,6 +8,15 @@ CREATE TABLE salesman
        
 )
 
+----  mysql version 
+CREATE TABLE salesman
+(
+       sid        int(10) PRIMARY KEY AUTO_INCREMENT,
+       sname      varchar(10) NOT NULL UNIQUE,
+       spassword  VARCHAR(20) NOT NULL
+       
+)
+
 --Éú³ÉÐòÁÐ
 
 CREATE SEQUENCE salesman_seq

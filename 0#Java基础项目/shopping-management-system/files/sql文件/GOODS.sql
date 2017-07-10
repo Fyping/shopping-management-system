@@ -2,11 +2,21 @@
 
 CREATE TABLE GOODS
 (
-       gid     NUMBER(10) primary key,
+       gid     NUMBER(10)  primary key,
        gname   VARCHAR2(20) NOT NULL UNIQUE,
        gprice  NUMBER(18,2) NOT NULL,
        gnum    NUMBER(11) NOT NULL
 );
+
+drop table GOODS;  ----mysql version
+CREATE TABLE GOODS
+(
+       gid     int(10)  primary key AUTO_INCREMENT,
+       gname   VARCHAR(20) NOT NULL UNIQUE,
+       gprice  double(18,2) NOT NULL,
+       gnum    int(11) NOT NULL
+);
+
 
 --需求：gid主键自动生成。分以下两步实现！
  

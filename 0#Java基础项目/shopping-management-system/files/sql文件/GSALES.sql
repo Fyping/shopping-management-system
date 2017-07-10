@@ -13,6 +13,16 @@ CREATE TABLE gsales
        snum  NUMBER(11) NOT NULL
 );
 
+----mysql version
+drop table gsales;
+CREATE TABLE gsales
+(
+       gsid  int(10) PRIMARY KEY AUTO_INCREMENT,
+       gid   int(10)   NOT NULL,
+       sid   int(10) NOT NULL, 
+       sdate timestamp NOT NULL  DEFAULT current_timestamp , 
+       snum  int(11) NOT NULL
+);
 --Éú³ÉÐòÁÐ
 
 CREATE SEQUENCE gsales_seq
